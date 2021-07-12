@@ -78,6 +78,7 @@ echo Temp directory \"$tmp_dir\" is created
 echo ::endgroup::
 
 echo ::group:: Running Sphinx builder
+source .venv/bin/activate
 sphinx-build -b html $doc_dir $tmp_dir
 echo ::endgroup::
 
