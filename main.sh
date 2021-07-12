@@ -78,6 +78,10 @@ echo Temp directory \"$tmp_dir\" is created
 echo ::endgroup::
 
 echo ::group:: Running Sphinx builder
+ls $repo_dir/src/seismicsdk
+cat $repo_dir/src/seismicsdk/client.py
+source .venv/bin/activate
+echo HELLO WORLD
 sphinx-build -b html $doc_dir $tmp_dir
 echo ::endgroup::
 
